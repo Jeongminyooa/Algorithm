@@ -47,7 +47,7 @@ void mergeSort(word* d, int p, int r) {
 void printWord(char w[][LENGTH], int size) {
 	int i;
 	for (i = 0; i < size; i++) {
-		//이전 단어와 중복인 경우 출력하지 않는다.
+		//이전 단어와 중복인 경우 출력하지 않는다.z
 		
 		printf("%s\n", w[i]);
 		
