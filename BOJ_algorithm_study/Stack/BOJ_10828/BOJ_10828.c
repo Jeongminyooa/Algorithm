@@ -43,7 +43,7 @@ int main(void) {
 
         scanf_s("%s", command, 10);
 
-        if(strcmp(command, "push") == 0) {
+        if (strcmp(command, "push") == 0) {
             int num;
             scanf_s("%d", &num);
             int rlt = push(num);
@@ -63,5 +63,5 @@ int main(void) {
         else if (strcmp(command, "top") == 0) {
             printf("%d\n", get_top());
         }
-     }
+    }
 }

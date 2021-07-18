@@ -51,10 +51,10 @@ int main(void) {
         }
         else if (input[i] == ')') {
             //쌍이 맞지 않는다면 error 발생시켜 break -> 실행시간 단축
-            if (peek() != '(' || empty()){
+            if (peek() != '(' || empty()) {
                 error = 1;
-            break;
-        }
+                break;
+            }
             if (input[i - 1] == '(')
                 rlt += temp;
 

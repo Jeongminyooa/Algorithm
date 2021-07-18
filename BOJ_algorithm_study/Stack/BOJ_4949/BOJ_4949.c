@@ -12,7 +12,7 @@ int push(char x)
 {
     if (top >= SIZE - 1) return -1;
     return arr[++top] = x;
-    
+
 }
 
 int pop()
@@ -22,7 +22,7 @@ int pop()
 }
 
 char peek() {
-    if (top >= SIZE -1 || top < 0)
+    if (top >= SIZE - 1 || top < 0)
         return -1;
 
     return arr[top];
@@ -40,16 +40,16 @@ int main(void) {
         init();
 
         for (int i = 0; input[i] != '\0'; i++) {
-            if(input[i] == '(' || input[i] == ')' || input[i] == '[' || input[i] == ']') {
+            if (input[i] == '(' || input[i] == ')' || input[i] == '[' || input[i] == ']') {
                 if (peek() == '(' && input[i] == ')') pop();
                 else if (peek() == '[' && input[i] == ']') pop();
                 else
                     push(input[i]);
             }
         }
-        if (empty() == 1) 
+        if (empty() == 1)
             printf("yes\n");
-        else 
+        else
             printf("no\n");
 
         gets(input);
