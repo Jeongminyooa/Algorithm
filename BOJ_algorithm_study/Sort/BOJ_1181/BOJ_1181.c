@@ -19,7 +19,7 @@ void merge(word* d, int p, int q, int r) {
 
 	while (i <= q && j <= r) {
 		if (d[i].len < d[j].len) temp[t++] = d[i++];
-		else if(d[i].len > d[j].len) temp[t++] = d[j++];
+		else if (d[i].len > d[j].len) temp[t++] = d[j++];
 		else {
 			//문자열의 길이가 같은 경우
 			if (strcmp(d[i].string, d[j].string) < 0)
@@ -48,9 +48,9 @@ void printWord(char w[][LENGTH], int size) {
 	int i;
 	for (i = 0; i < size; i++) {
 		//이전 단어와 중복인 경우 출력하지 않는다.z
-		
+
 		printf("%s\n", w[i]);
-		
+
 	}
 }
 int main()
