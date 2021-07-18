@@ -1,4 +1,4 @@
-//Counting Sort를 사용해서 문제 해결
+//Counting Sort를 사용해서 문제 해결 10989
 #include <stdio.h>
 
 #define SIZE 10001
@@ -12,7 +12,7 @@ int main()
 	int j;
 
 	scanf_s("%d", &n);
-	
+
 	//n의 범위가 0 <= N <= 10,000,000이므로 long long 사용
 	for (i = 0; i < n; i++) {
 		scanf_s("%d", &idx);
@@ -24,5 +24,5 @@ int main()
 			printf("%d\n", i);
 		}
 	}
-	
+
 }

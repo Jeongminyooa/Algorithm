@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{aeaa34b5-04f9-4c2f-a194-7dbe05c07361}</ProjectGuid>
+    <ProjectGuid>{7236805c-1868-43a8-9cf9-4f5d9e5ffe1a}</ProjectGuid>
     <RootNamespace>BOJ10989</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BOJ_10989.cpp" />
+    <ClCompile Include="BOJ_10989.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
