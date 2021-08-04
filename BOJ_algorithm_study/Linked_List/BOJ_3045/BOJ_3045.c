@@ -8,7 +8,7 @@ typedef struct {
 
 Node list[MAX];
 int lis[MAX];
-int temp[MAX];
+int temp[MAX]; //각 원소의 LIS 길이를 저장하는 배열
 int rlt[MAX];
 
 int lower_bound(int start, int end, int target) {
@@ -26,16 +26,14 @@ int lower_bound(int start, int end, int target) {
 }
 
 int main() {
-	int N, M;
-	int i = 0, a = 0, b = 0, t = 0;
-	int longest = 0;
-	int last = 0, min = 0;
+	int N, M, a, b;
+	int i, t = 0, lis_idx = 0;
+	int longest, reverse;
 	char op;
-	int lis_idx = 0;
 
 	scanf_s("%d %d", &N, &M);
 
-	//0(dummy Node)부터 N개까지의 이중 연결 리스트 생성
+	//0(head)부터 N개까지의 이중 연결 리스트 생성
 	for (i = 0; i <= N; i++) {
 		list[i].next = i + 1;
 
@@ -69,7 +67,6 @@ int main() {
 		list[list[a].next].prev = a;
 	}
 	
-	t = 0;
 	/*LIS를 이용해 최소 연산 횟수를 구함
 	LIS를 제외한 나머지 수를 정렬하면 된다.*/
 	for (i = list[0].next; i != N + 1; i = list[i].next) {
@@ -80,17 +77,15 @@ int main() {
 
 		if (i > lis[lis_idx]) {
 			lis[++lis_idx] = i;
-			temp[t] = lis_idx;
+			temp[t++] = lis_idx;
 		}
 		else {
 			int lb = lower_bound(0, lis_idx, i);
 			lis[lb] = i;
-			temp[t] = lb;
+			temp[t++] = lb;
 		}
-		last = i;
-		t++;
+		reverse = i; // 마지막 원소를 저장
 	}
-	 min = lis[lis_idx];
 	 longest = lis_idx;
 
 	//최소 연산 횟수 출력
@@ -99,14 +94,13 @@ int main() {
 
 	//LIS의 끝 원소까지는 A 연산
 	t = N - 1;
-	i = lis_idx;
-	// temp에 저장된 번호를 역순으로 trace	
+
+	// temp에 저장된 번호를 역순으로 trace -> 원소를 찾아서 rlt에 저장
 	while (t >= 0) {
 		if (temp[t] == lis_idx) {
-			rlt[i--] = last;
-			lis_idx--;
+			rlt[lis_idx--] = reverse;
 		}
-		last = list[last].prev;
+		reverse = list[reverse].prev;
 		t--;
 	}
 
@@ -119,7 +113,7 @@ int main() {
 		printf("A %d %d\n", t, rlt[i]);
 	}
 
-	for (i = min + 1; i <= N; i++)
+	for (i = lis[longest] + 1; i <= N; i++)
 		printf("B %d %d\n", i, i - 1);
 	return 0;
 }
