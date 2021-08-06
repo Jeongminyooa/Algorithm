@@ -44,7 +44,7 @@ solved.ac에서 참고한 티어가 문제 이름과 함께 기재되어 있습�
 ## STUDY
 문제 풀이 사이트 외에 추가적인 공부용 코드 기록입니다.
 
-###Tree
+### Tree
 + [수식 트리](./study/tree_evaluate/evaluate.c)
 + [반복 중위 순회](./study/tree_inorder_iter/inorder_iter.c)
 + [레벨 순회](./study/tree_level_order/level_order.c)
