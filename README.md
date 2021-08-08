@@ -49,3 +49,4 @@ solved.ac에서 참고한 티어가 문제 이름과 함께 기재되어 있습�
 + [반복 중위 순회](./study/tree_inorder_iter/inorder_iter.c)
 + [레벨 순회](./study/tree_level_order/level_order.c)
 + [스레드 이진 트리](./study/tree_threaded_binary/threaded_binary_tree.c)
++ [이진 검색 트리](./study/tree_binary_search_tree/binary_search_tree.c)
