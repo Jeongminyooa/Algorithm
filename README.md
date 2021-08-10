@@ -61,4 +61,4 @@ solved.ac에서 참고한 티어가 문제 이름과 함께 기재되어 있습�
 ### Heap
 + [우선순위 큐](./study/heap/heap.c)
 + [히프 정렬](./study/heap_sort/heap_sort.c)
-+ [머신 스케줄링](./stucy/heap_machine_schedling/machine_schedling.c)
++ [머신 스케줄링](./study/heap_machine_schedling/machine_schedling.c)
