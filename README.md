@@ -48,5 +48,17 @@ solved.ac에서 참고한 티어가 문제 이름과 함께 기재되어 있습�
 + [수식 트리](./study/tree_evaluate/evaluate.c)
 + [반복 중위 순회](./study/tree_inorder_iter/inorder_iter.c)
 + [레벨 순회](./study/tree_level_order/level_order.c)
+
+### Binary Tree
++ [이진 트리 연산](./study/tree_op_function/op_function.c)
 + [스레드 이진 트리](./study/tree_threaded_binary/threaded_binary_tree.c)
 + [이진 검색 트리](./study/tree_binary_search_tree/binary_search_tree.c)
+
+### Linked List
++ [연결리스트로 구현한 스택](./study/Linked_list_stack/linked_list_stack.c)
++ [연결리스트로 구현한 큐](./study/Linked_list_queue/linked_list_queue.c)
+
+### Heap
++ [우선순위 큐](./study/heap/heap.c)
++ [히프 정렬](./study/heap_sort/heap_sort.c)
++ [머신 스케줄링](./stucy/heap_machine_schedling/heap_machine_schedling.c)
