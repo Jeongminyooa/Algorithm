@@ -1,3 +1,4 @@
+//BOJ_1926 ½Ç¹ö1
 #include <stdio.h>
 #include <stdlib.h>
 
