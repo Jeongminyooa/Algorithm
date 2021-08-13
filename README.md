@@ -40,6 +40,11 @@ solved.ac에서 참고한 티어가 문제 이름과 함께 기재되어 있습�
 + [1991번 트리 순회 (실버1)](./BOJ_algorithm_study/Tree/BOJ_1991/BOJ_1991.c)
 + [17501번 수식 트리 (골드1)](./BOJ_algorithm_study/Tree/BOJ_17501/BOJ_17501.c)
 
+###BFS
++ [1926 그림 (실버 1)](./BOJ_algorithm_study/BFS/BOJ_1926/BOJ_1926.c)
++ [2178 미로 탐색 (실버 1)](./BOJ_algorithm_study/BFS/BOJ_2178/BOJ_2178.c)
++ [7576 토마토 (실버 1)](./BOJ_algorithm_study/BFS/BOJ_7576/BOJ_7576.c)
+
 ***
 ## STUDY
 문제 풀이 사이트 외에 추가적인 공부용 코드 기록입니다.
